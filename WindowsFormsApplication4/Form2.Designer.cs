@@ -260,6 +260,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "收支情况记录";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMoney)).EndInit();
             this.ResumeLayout(false);

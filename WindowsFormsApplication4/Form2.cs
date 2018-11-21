@@ -138,5 +138,10 @@ namespace WindowsFormsApplication4
         {
             GenerateSummary();
         }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
