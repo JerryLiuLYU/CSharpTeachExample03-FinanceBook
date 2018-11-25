@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class Form1
+    partial class Test
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -94,7 +94,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(277, 87);
+            this.richTextBox1.Location = new System.Drawing.Point(379, 75);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(161, 167);
             this.richTextBox1.TabIndex = 4;
@@ -137,7 +137,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(48, 68);
+            this.radioButton4.Location = new System.Drawing.Point(48, 70);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(95, 16);
             this.radioButton4.TabIndex = 8;
@@ -149,9 +149,9 @@
             // 
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(33, 253);
+            this.groupBox1.Location = new System.Drawing.Point(575, 425);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.Size = new System.Drawing.Size(212, 100);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
@@ -159,7 +159,7 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Location = new System.Drawing.Point(306, 296);
+            this.groupBox2.Location = new System.Drawing.Point(575, 273);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(212, 119);
             this.groupBox2.TabIndex = 10;
@@ -185,7 +185,7 @@
             "数学",
             "体育",
             "英语"});
-            this.checkedListBox1.Location = new System.Drawing.Point(180, 29);
+            this.checkedListBox1.Location = new System.Drawing.Point(755, 47);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 84);
             this.checkedListBox1.TabIndex = 12;
@@ -209,7 +209,7 @@
             "数学",
             "体育",
             "英语"});
-            this.listBox1.Location = new System.Drawing.Point(381, 68);
+            this.listBox1.Location = new System.Drawing.Point(584, 49);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox1.Size = new System.Drawing.Size(151, 64);
@@ -239,7 +239,7 @@
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2});
-            this.listView1.Location = new System.Drawing.Point(68, 377);
+            this.listView1.Location = new System.Drawing.Point(584, 145);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(121, 97);
             this.listView1.TabIndex = 17;
@@ -251,11 +251,11 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // Form1
+            // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 612);
+            this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -270,7 +270,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Test";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
