@@ -70,5 +70,25 @@ namespace WindowsFormsApplication4
             listBox1.DataSource = citys;
             comboBox1.DataSource = citys;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            for (int i = 0; i < 100; i+=20)
+            {
+                var now = new DateTime(2018, 4, 12, 23, 7, 3);
+                
+                string day = now.Day.ToString("00");
+                string month = now.Month.ToString("00");
+                string year = now.Year.ToString("00");
+                string hour = now.Hour.ToString("00");
+                string minute = now.Minute.ToString("00");
+                string second = now.Second.ToString("00");
+                string SerialNumber = "CK" + year + month + day + hour + minute + second + rnd.Next(10, 99).ToString();
+                richTextBox1.Text += SerialNumber + "\r\n";
+            }
+            // console.log(SerialNumber)
+            // return SerialNumber;
+        }
     }
 }
