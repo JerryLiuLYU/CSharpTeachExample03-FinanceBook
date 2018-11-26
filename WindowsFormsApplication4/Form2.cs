@@ -77,6 +77,7 @@ namespace WindowsFormsApplication4
             //}
             //listBoxItem.DataSource = t.Find(p => p.Name == comboBoxInOutClass.Text).Items;
             //listBoxItem.SelectedIndex = -1;
+
             var t = ((InOutClass)(comboBoxInOutClass.SelectedItem)).Items;
             listBoxItem.Items.Clear();
             foreach (var item in t)
