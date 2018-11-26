@@ -25,8 +25,22 @@ namespace WindowsFormsApplication4
         {
             if (radioButtonIn.Checked)
             {               
-                comboBoxInOutClass.DataSource = _data.Find(p=>p.Name==radioButtonIn.Text).InOutClasses;
-                comboBoxInOutClass.DisplayMember = "Name";
+                //comboBoxInOutClass.DataSource = _data.Find(p=>p.Name==radioButtonIn.Text).InOutClasses;
+                //comboBoxInOutClass.DisplayMember = "Name";
+
+
+                foreach (var item in _data)
+                {
+                    if (item.Name == "收入")
+                    {
+                        comboBoxInOutClass.Items.Clear();
+                        foreach (var cls in item.InOutClasses)
+                        {
+                            comboBoxInOutClass.Items.Add(cls);
+                            comboBoxInOutClass.DisplayMember = "Name";
+                        }
+                    }
+                }
             }
 
         }
@@ -35,21 +49,43 @@ namespace WindowsFormsApplication4
         {
             if (radioButtonOut.Checked)
             {
-                comboBoxInOutClass.DataSource = _data.Find(p => p.Name == radioButtonOut.Text).InOutClasses;
-                comboBoxInOutClass.DisplayMember = "Name";
+                //comboBoxInOutClass.DataSource = _data.Find(p => p.Name == radioButtonOut.Text).InOutClasses;
+                //comboBoxInOutClass.DisplayMember = "Name";
+                foreach (var item in _data)
+                {
+                    if (item.Name == radioButtonOut.Text)
+                    {
+                        comboBoxInOutClass.Items.Clear();
+                        foreach (var cls in item.InOutClasses)
+                        {
+                            comboBoxInOutClass.Items.Add(cls);
+                            comboBoxInOutClass.DisplayMember = "Name";
+
+                        }
+                    }
+                }
 
             }
         }
 
         private void comboBoxInOutClass_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var t = comboBoxInOutClass.DataSource as List<InOutClass>;
-            if (t.Find(p => p.Name == comboBoxInOutClass.Text) == null)
+            //var t = comboBoxInOutClass.DataSource as List<InOutClass>;
+            //if (t.Find(p => p.Name == comboBoxInOutClass.Text) == null)
+            //{
+            //    return;
+            //}
+            //listBoxItem.DataSource = t.Find(p => p.Name == comboBoxInOutClass.Text).Items;
+            //listBoxItem.SelectedIndex = -1;
+            var t = ((InOutClass)(comboBoxInOutClass.SelectedItem)).Items;
+            listBoxItem.Items.Clear();
+            foreach (var item in t)
             {
-                return;
+                listBoxItem.Items.Add(item);
             }
-            listBoxItem.DataSource = t.Find(p => p.Name == comboBoxInOutClass.Text).Items;
-            listBoxItem.SelectedIndex = -1;
+
+
+
 
         }
 
@@ -103,7 +139,7 @@ namespace WindowsFormsApplication4
                 strPeople += item + ",";
             }
             strPeople = strPeople.TrimEnd(',');
-            strSummary.AppendFormat("手指人：{0}\r\n", strPeople);
+            strSummary.AppendFormat("收支人：{0}\r\n", strPeople);
             strSummary.AppendFormat("金额：{0}\r\n", numericUpDownMoney.Text);
             
             textBoxSummary.Text = strSummary.ToString();

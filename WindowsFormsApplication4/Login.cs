@@ -36,6 +36,7 @@ namespace WindowsFormsApplication4
 
         private bool IsValid(string strUsername, string strPassword)
         {
+            //todo: 根据数据库内容修改登陆逻辑
             if (strPassword == "123")
             {
                 return true;

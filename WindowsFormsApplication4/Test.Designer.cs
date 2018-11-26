@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("语文");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("数学");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("语文");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("数学");
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -90,6 +90,7 @@
             this.textBox1.Location = new System.Drawing.Point(88, 145);
             this.textBox1.MaxLength = 8;
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '%';
             this.textBox1.Size = new System.Drawing.Size(135, 21);
             this.textBox1.TabIndex = 3;
             // 
@@ -236,10 +237,10 @@
             // 
             // listView1
             // 
-            listViewItem3.Tag = "语文";
+            listViewItem1.Tag = "语文";
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3,
-            listViewItem4});
+            listViewItem1,
+            listViewItem2});
             this.listView1.Location = new System.Drawing.Point(584, 145);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(121, 97);

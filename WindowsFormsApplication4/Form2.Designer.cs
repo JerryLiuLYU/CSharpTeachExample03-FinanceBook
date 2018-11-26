@@ -145,7 +145,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 12);
             this.label6.TabIndex = 9;
-            this.label6.Text = "手指人：";
+            this.label6.Text = "收支人：";
             // 
             // dateTimePickerDate
             // 
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 451);
+            this.ClientSize = new System.Drawing.Size(554, 448);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxSummary);
