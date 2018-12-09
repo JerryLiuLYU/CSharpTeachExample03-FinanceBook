@@ -141,7 +141,7 @@ namespace WindowsFormsApplication4
             }
             strPeople = strPeople.TrimEnd(',');
             strSummary.AppendFormat("收支人：{0}\r\n", strPeople);
-            strSummary.AppendFormat("金额：{0}\r\n", numericUpDownMoney.Text);
+            strSummary.AppendFormat("金额：{0}\r\n", numericUpDownMoney.Value);
             
             textBoxSummary.Text = strSummary.ToString();
         }
@@ -178,7 +178,7 @@ namespace WindowsFormsApplication4
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            // Application.Exit();
         }
     }
 }

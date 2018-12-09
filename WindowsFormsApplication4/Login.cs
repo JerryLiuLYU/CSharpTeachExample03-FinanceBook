@@ -24,7 +24,7 @@ namespace WindowsFormsApplication4
             if (IsValid(strUsername, strPassword))
             {
                 this.Visible = false;
-                Form2 frm = new Form2();
+                MainForm frm = new MainForm();
                 frm.Show();
 
             }
