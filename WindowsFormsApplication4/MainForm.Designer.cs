@@ -31,16 +31,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.系统管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.收支管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.基本资料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加收支ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.统计查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.基本资料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加收支项目ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,65 @@
             this.退出ToolStripMenuItem.Text = "退出(&E)";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
+            // 收支管理ToolStripMenuItem
+            // 
+            this.收支管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加收支ToolStripMenuItem,
+            this.统计查询ToolStripMenuItem});
+            this.收支管理ToolStripMenuItem.Name = "收支管理ToolStripMenuItem";
+            this.收支管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.收支管理ToolStripMenuItem.Text = "收支管理";
+            // 
+            // 添加收支ToolStripMenuItem
+            // 
+            this.添加收支ToolStripMenuItem.Name = "添加收支ToolStripMenuItem";
+            this.添加收支ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.添加收支ToolStripMenuItem.Text = "添加收支";
+            this.添加收支ToolStripMenuItem.Click += new System.EventHandler(this.添加收支ToolStripMenuItem_Click);
+            // 
+            // 统计查询ToolStripMenuItem
+            // 
+            this.统计查询ToolStripMenuItem.Name = "统计查询ToolStripMenuItem";
+            this.统计查询ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.统计查询ToolStripMenuItem.Text = "统计查询";
+            // 
+            // 基本资料ToolStripMenuItem
+            // 
+            this.基本资料ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.添加收支项目ToolStripMenuItem,
+            this.用户管理ToolStripMenuItem});
+            this.基本资料ToolStripMenuItem.Name = "基本资料ToolStripMenuItem";
+            this.基本资料ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
+            this.基本资料ToolStripMenuItem.Text = "基本资料";
+            // 
+            // 添加收支项目ToolStripMenuItem
+            // 
+            this.添加收支项目ToolStripMenuItem.Name = "添加收支项目ToolStripMenuItem";
+            this.添加收支项目ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.添加收支项目ToolStripMenuItem.Text = "添加收支项目";
+            this.添加收支项目ToolStripMenuItem.Click += new System.EventHandler(this.添加收支项目ToolStripMenuItem_Click);
+            // 
+            // 用户管理ToolStripMenuItem
+            // 
+            this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.用户管理ToolStripMenuItem.Text = "用户管理";
+            // 
+            // 帮助ToolStripMenuItem
+            // 
+            this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.关于ToolStripMenuItem});
+            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.帮助ToolStripMenuItem.Text = "帮助";
+            // 
+            // 关于ToolStripMenuItem
+            // 
+            this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.关于ToolStripMenuItem.Text = "关于";
+            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Location = new System.Drawing.Point(0, 25);
@@ -90,64 +149,6 @@
             this.statusStrip1.Size = new System.Drawing.Size(1086, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // 收支管理ToolStripMenuItem
-            // 
-            this.收支管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.添加收支ToolStripMenuItem,
-            this.统计查询ToolStripMenuItem});
-            this.收支管理ToolStripMenuItem.Name = "收支管理ToolStripMenuItem";
-            this.收支管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.收支管理ToolStripMenuItem.Text = "收支管理";
-            // 
-            // 基本资料ToolStripMenuItem
-            // 
-            this.基本资料ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.添加收支项目ToolStripMenuItem,
-            this.用户管理ToolStripMenuItem});
-            this.基本资料ToolStripMenuItem.Name = "基本资料ToolStripMenuItem";
-            this.基本资料ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.基本资料ToolStripMenuItem.Text = "基本资料";
-            // 
-            // 帮助ToolStripMenuItem
-            // 
-            this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.关于ToolStripMenuItem});
-            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.帮助ToolStripMenuItem.Text = "帮助";
-            // 
-            // 添加收支ToolStripMenuItem
-            // 
-            this.添加收支ToolStripMenuItem.Name = "添加收支ToolStripMenuItem";
-            this.添加收支ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.添加收支ToolStripMenuItem.Text = "添加收支";
-            this.添加收支ToolStripMenuItem.Click += new System.EventHandler(this.添加收支ToolStripMenuItem_Click);
-            // 
-            // 统计查询ToolStripMenuItem
-            // 
-            this.统计查询ToolStripMenuItem.Name = "统计查询ToolStripMenuItem";
-            this.统计查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.统计查询ToolStripMenuItem.Text = "统计查询";
-            // 
-            // 添加收支项目ToolStripMenuItem
-            // 
-            this.添加收支项目ToolStripMenuItem.Name = "添加收支项目ToolStripMenuItem";
-            this.添加收支项目ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.添加收支项目ToolStripMenuItem.Text = "添加收支项目";
-            // 
-            // 用户管理ToolStripMenuItem
-            // 
-            this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.用户管理ToolStripMenuItem.Text = "用户管理";
-            // 
-            // 关于ToolStripMenuItem
-            // 
-            this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.关于ToolStripMenuItem.Text = "关于";
-            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // MainForm
             // 

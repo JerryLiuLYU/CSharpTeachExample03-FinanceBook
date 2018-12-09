@@ -35,5 +35,24 @@ namespace WindowsFormsApplication4
             
             frm.ShowDialog();
         }
+
+        private void 添加收支项目ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddItem frm = new AddItem();
+            frm.MdiParent = this;
+            frm.Show();
+            //以下代码只允许该窗口打开一个
+            //if (Application.OpenForms["AddItem"] == null)
+            //{
+            //    AddItem child = new AddItem();
+            //    child.MdiParent = this;                
+            //    child.Show();
+            //}
+            //else//有Name为FrmChildren的子船体，就直接show()
+            //{
+            //    Application.OpenForms["AddItem"].Show();
+            //    Application.OpenForms["AddItem"].Focus();
+            //}
+        }
     }
 }
