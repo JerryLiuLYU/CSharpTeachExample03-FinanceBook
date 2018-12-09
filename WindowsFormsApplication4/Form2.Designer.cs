@@ -32,7 +32,7 @@
             this.radioButtonIn = new System.Windows.Forms.RadioButton();
             this.radioButtonOut = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxInOutClass = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategory = new System.Windows.Forms.ComboBox();
             this.listBoxItem = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,14 +91,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "收支类别：";
             // 
-            // comboBoxInOutClass
+            // comboBoxCategory
             // 
-            this.comboBoxInOutClass.FormattingEnabled = true;
-            this.comboBoxInOutClass.Location = new System.Drawing.Point(99, 60);
-            this.comboBoxInOutClass.Name = "comboBoxInOutClass";
-            this.comboBoxInOutClass.Size = new System.Drawing.Size(146, 20);
-            this.comboBoxInOutClass.TabIndex = 4;
-            this.comboBoxInOutClass.SelectedIndexChanged += new System.EventHandler(this.comboBoxInOutClass_SelectedIndexChanged);
+            this.comboBoxCategory.FormattingEnabled = true;
+            this.comboBoxCategory.Location = new System.Drawing.Point(99, 60);
+            this.comboBoxCategory.Name = "comboBoxCategory";
+            this.comboBoxCategory.Size = new System.Drawing.Size(146, 20);
+            this.comboBoxCategory.TabIndex = 4;
+            this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxInOutClass_SelectedIndexChanged);
+            this.comboBoxCategory.SelectionChangeCommitted += new System.EventHandler(this.comboBoxCategory_SelectionChangeCommitted);
             // 
             // listBoxItem
             // 
@@ -253,7 +254,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBoxItem);
-            this.Controls.Add(this.comboBoxInOutClass);
+            this.Controls.Add(this.comboBoxCategory);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButtonOut);
             this.Controls.Add(this.radioButtonIn);
@@ -274,7 +275,7 @@
         private System.Windows.Forms.RadioButton radioButtonIn;
         private System.Windows.Forms.RadioButton radioButtonOut;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBoxInOutClass;
+        private System.Windows.Forms.ComboBox comboBoxCategory;
         private System.Windows.Forms.ListBox listBoxItem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
